@@ -3,36 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block Busters - Official Website</title>
+    <title>My Games - Block Busters & Pastel Blocks</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            text-align: center;
-            padding: 50px 20px;
             line-height: 1.6;
             color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
-        h1 { font-size: 2.5em; color: #000; }
-        p { margin: 10px 0; }
-        .contact { color: #666; }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .game-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            scroll-margin-top: 20px;
+        }
+        
+        /* Block Busters 스타일 */
+        #blockbusters {
+            border-top: 5px solid #FF6B6B;
+        }
+        #blockbusters h2 {
+            color: #FF6B6B;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        /* Pastel Blocks 스타일 */
+        #pastelblocks {
+            border-top: 5px solid #B4A7D6;
+        }
+        #pastelblocks h2 {
+            color: #B4A7D6;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .game-description {
+            font-size: 1.1em;
+            color: #666;
+            margin: 20px 0;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 25px 0;
+            padding-left: 20px;
+        }
+        .features li {
+            margin: 10px 0;
+            font-size: 1.05em;
+        }
+        
+        .contact-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .email {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
         .privacy-link {
             display: inline-block;
-            margin-top: 20px;
-            color: #0066cc;
+            margin-top: 15px;
+            color: #667eea;
             text-decoration: none;
+            font-size: 1.1em;
         }
-        .privacy-link:hover { text-decoration: underline; }
+        .privacy-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <h1>Block Busters</h1>
-    <p>Welcome to the official website of <strong>Block Busters</strong>!</p>
-    <p>Experience the ultimate block-breaking fun on your mobile device.</p>
-    
-    <hr style="width: 50%; margin: 30px auto; border: 0; border-top: 1px solid #eee;">
+    <div class="container">
+        <header>
+            <h1>🎮 My Games</h1>
+            <p>Fun puzzle games for everyone!</p>
+        </header>
 
-    <p class="contact">Support & Inquiries: <strong>zzigzzag234@gmail.com</strong></p>
-    
-    <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+        <!-- Block Busters Section -->
+        <section id="blockbusters" class="game-section">
+            <h2>🔥 Block Busters</h2>
+            <p class="game-description">
+                Experience the ultimate block-breaking fun on your mobile device!
+            </p>
+            <ul class="features">
+                <li>🎯 Classic block puzzle gameplay</li>
+                <li>💥 Explosive chain reactions</li>
+                <li>🏆 Challenge your high score</li>
+                <li>📱 Play offline anytime, anywhere</li>
+            </ul>
+        </section>
+
+        <!-- Pastel Blocks Section -->
+        <section id="pastelblocks" class="game-section">
+            <h2>🎨 Pastel Blocks</h2>
+            <p class="game-description">
+                Addictive block puzzle meets soothing pastel vibes!
+            </p>
+            <ul class="features">
+                <li>💣 Strategic bomb power-ups</li>
+                <li>⚡ Intense Time Attack mode</li>
+                <li>🌸 Beautiful pastel design</li>
+                <li>🧘‍♀️ Relaxing yet challenging</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h3>📧 Support & Inquiries</h3>
+            <p class="email">zzigzzag234@gmail.com</p>
+            <a href="privacy.html" class="privacy-link">Privacy Policy →</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 zzigzzag234. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
